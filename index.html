@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claculatore</title>
+</head>
+<body>
+
+    <div class="container">
+         <div class="calculator">
+            <div class="afficahge">
+                   <input id="display" type="text" id="display">
+            </div>
+            <div class="btn">
+                <div class="numb">
+                    <button   onclick="cleardisply()" id="btn-%">C</button>
+                    <button   id="adv">+/-</button>
+                       <button onclick="displayonscreen('%')"  id="ac"> % </button>
+                    <button onclick="displayonscreen('7')" id="btn-7">7</button>
+                    <button onclick="displayonscreen('8')" id="btn-8">8</button>
+                    <button onclick="displayonscreen('9')" id="btn-9">9</button>
+                    <button onclick="displayonscreen('4')" id="btn-4">4</button>
+                    <button onclick="displayonscreen('5')" id="btn-5">5</button>
+                    <button onclick="displayonscreen('6')" id="btn-6">6</button>
+                    <button onclick="displayonscreen('1')" id="btn-1">1</button>
+                    <button onclick="displayonscreen('2')" id="btn-2">2</button>
+                    <button onclick="displayonscreen('3')" id="btn-3">3</button>
+        
+                        <button onclick="displayonscreen('3.14')" >π</button>
+                    
+                    <button onclick="displayonscreen('0')" id="btn-0">0</button>
+                    <button onclick="displayonscreen('.')" id="btn-point">.</button>
+                   </div>
+               <div class="operation">
+                <button onclick="displayonscreen('/')" id="div">÷</button>
+                <button onclick="displayonscreen('*')" id="mult">×</button>
+                <button onclick="displayonscreen('-')" id="min">-</button>
+                <button onclick="displayonscreen('+')" id="add">+</button>
+                <button  onclick="clculat()"     id="eq">=</button>
+               </div>
+              
+
+            </div>
+         </div>
+    </div>
+    
+   
+    <script src="app.js"></script>
+</body>
+</html>

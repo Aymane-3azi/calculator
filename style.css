@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+.container{
+    background: #bebebe;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .calculator{
+    background: #000 ;
+    border-radius: 10px;
+    width: 350px;
+    height: 550px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 
+    0 -4px 10px rgba(0, 0, 0, 0.1), 
+    4px 0 10px rgba(0, 0, 0, 0.1), 
+    -4px 0 10px rgba(0, 0, 0, 0.1); 
+
+}
+.container .calculator .afficahge{
+    height: 140px;
+    width: 100%;
+    border-radius: 10px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.container .calculator .afficahge input{
+    background: #000;
+    border: 0;
+    outline: 0;
+    border-radius:10px;
+    padding: 10px;
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 10px;
+    color: white;
+    font-weight: 500;
+    text-align: right;
+}
+.btn{
+    background: #000;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-itlerftems: center;
+}
+.btn .numb{
+    background: #000;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     gap: 10px;
+}
+.btn .numb button{
+    background: #2a2a2c;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+   border-radius: 50%;
+   border: 0;
+   font-size: 30px ;
+   font-weight: 500;
+   cursor: pointer;
+   transition: 0.2s;
+}
+.btn .operation{
+    background: #000;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+     flex-direction: column;
+     gap: 10px;
+     padding-right: 10px;
+}
+.btn .operation button{
+    cursor: pointer;
+    background: #ffa00c;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+   border-radius: 50%;
+   border: 0;
+   font-size: 40px ;
+   font-weight: 500;
+   transition: 0.2s;
+}
+.btn .operation button:active{
+    background: #f5c271;
+}
+.btn .numb button:hover{
+    background: #2a2a2ca9;
+}
+.btn .numb button:active{
+    background: #424244;
+}
+
+@media (max-width : 480px){
+    .container .calculator{
+        padding: 10px;
+        background: #000 ;
+        border-radius: 10px;
+        width: 70%;
+        height: 90%;
+        box-shadow: 0 5cap 10px rgba(0, 0, 0, 0.3);
+    }
+}
