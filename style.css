@@ -113,3 +113,24 @@
 .btn .numb button:active{
     background: #424244;
 }
+#ac{
+    background: #a5a5a5;
+    color: #000;
+}
+#ac:active{
+    background: #d6d5d5;
+}
+#salib{
+    background: #a5a5a5;
+    color: #000;
+}
+#salib:active{
+    background: #d6d5d5;
+}
+#btnc{
+    background: #a5a5a5;
+    color: #000;
+}
+#btnc:active{
+    background: #d6d5d5;
+}
